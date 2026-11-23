@@ -1,10 +1,33 @@
 import { faPersonDigging } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MyComponent() {
 	const [mobileNavBarOpen, setMobileNavBarOpen] = useState(false);
 	const [colorTheme, setColorTheme] = useState("dark");
+
+	useEffect(() => {
+		const root = document.documentElement;
+
+		// 1. Toggle the Tailwind dark class
+		if (colorTheme === "dark") {
+			root.classList.add("dark");
+		} else {
+			root.classList.remove("dark");
+		}
+
+		// 2. Update Safari's top bar color
+		const themeColor = colorTheme === "dark" ? "#0f172a" : "#ffffff"; // Match slate-900 & white
+		let metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+		if (!metaThemeColor) {
+			metaThemeColor = document.createElement("meta");
+			metaThemeColor.setAttribute("name", "theme-color");
+			document.head.appendChild(metaThemeColor);
+		}
+
+		metaThemeColor.setAttribute("content", themeColor);
+	}, [colorTheme]);
 
 	return (
 		<div
