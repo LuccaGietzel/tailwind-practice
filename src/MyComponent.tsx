@@ -31,7 +31,7 @@ export default function MyComponent() {
 
 	return (
 		<div
-			className={`${colorTheme} text-background dark:bg-background dark:text-primary min-h-dvh pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]`}
+			className={`${colorTheme} text-background dark:bg-background dark:text-primary min-h-dvh bg-neutral-200 pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]`}
 		>
 			{/* Navbar */}
 			<div className="flex items-center justify-between p-4">
