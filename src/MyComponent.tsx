@@ -41,13 +41,13 @@ export default function MyComponent() {
 
 				{/* Desktop Nav */}
 				<div className="hidden items-center gap-2 sm:flex">
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						Home
 					</span>
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						About
 					</span>
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						Contact
 					</span>
 					<button
@@ -72,13 +72,13 @@ export default function MyComponent() {
 			{/* Mobile Nav */}
 			{mobileNavBarOpen && (
 				<div className="flex flex-col items-center gap-2 p-4 sm:hidden">
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						Home
 					</span>
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						About
 					</span>
-					<span className="cursor-pointer transition-all hover:text-gray-300">
+					<span className="cursor-pointer transition-all active:text-gray-300 sm:hover:text-gray-300">
 						Contact
 					</span>
 					<button
@@ -94,22 +94,22 @@ export default function MyComponent() {
 			)}
 
 			<div className="text-primary grid gap-6 p-6 text-center text-2xl font-semibold sm:grid-cols-2 sm:text-sm md:grid-cols-3">
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature One
 				</div>
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature Two
 				</div>
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature Three
 				</div>
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature Four
 				</div>
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature Five
 				</div>
-				<div className="bg-background rounded p-4 transition-all hover:scale-105 dark:bg-neutral-500">
+				<div className="bg-background rounded p-4 transition-all hover:scale-105 active:scale-105 sm:active:scale-107 dark:bg-neutral-500">
 					Feature Six
 				</div>
 			</div>
