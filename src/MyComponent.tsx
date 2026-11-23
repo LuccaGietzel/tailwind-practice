@@ -8,7 +8,7 @@ export default function MyComponent() {
 
 	return (
 		<div
-			className={`${colorTheme} text-background dark:bg-background dark:text-primary min-h-screen`}
+			className={`${colorTheme} text-background dark:bg-background dark:text-primary min-h-dvh`}
 		>
 			{/* Navbar */}
 			<div className="flex items-center justify-between p-4">
